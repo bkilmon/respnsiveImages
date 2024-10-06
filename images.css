@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    border: 1px solid black;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 399px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .column {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .column {
+        flex: 16.6%;
+        max-width: 16.6%;
+    }
+}
+
+
